@@ -74,3 +74,4 @@ public class Servis {
 	public void setStatus_servisa(String status_servisa) {
 		this.status_servisa = status_servisa;
 	}
+}

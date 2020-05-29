@@ -16,7 +16,6 @@ public class Administrator extends Korisnik {
 
 	public Administrator(String ime, String prezime, String JMBG, String pol, String adresa, String broj_telefona,
 			String korisnicko_ime, String sifra, String plata) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getPlata() {
