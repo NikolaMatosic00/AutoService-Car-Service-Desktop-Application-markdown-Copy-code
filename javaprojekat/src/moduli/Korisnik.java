@@ -1,9 +1,12 @@
-package korisnici;
+package moduli;
+
+	
 
 public abstract class Korisnik {
+	protected int id;
 	protected String ime;
 	protected String prezime;
-	protected String JMBG;
+	protected String jmbg;
 	protected String pol;
 	protected String adresa;
 	protected String broj_telefona;
@@ -11,28 +14,31 @@ public abstract class Korisnik {
 	protected String sifra;
 	
 	public Korisnik() {
+		this.id = 0;
 		this.ime = "";
 		this.prezime = "";
-		this.JMBG = "";
+		this.jmbg = "";
 		this.pol = "";
 		this.adresa = "";
 		this.broj_telefona = "";
 		this.korisnicko_ime = "";
 		this.sifra = "";
-
+		
 	}
 
-	public Korisnik(String ime, String prezime, String jMBG, String pol, String adresa, String broj_telefona,
+	public Korisnik(int id, String ime, String prezime, String jmbg, String pol, String adresa, String broj_telefona,
 			String korisnicko_ime, String sifra) {
 		super();
+		this.id = id;
 		this.ime = ime;
 		this.prezime = prezime;
-		JMBG = jMBG;
+		this.jmbg = jmbg;
 		this.pol = pol;
 		this.adresa = adresa;
 		this.broj_telefona = broj_telefona;
 		this.korisnicko_ime = korisnicko_ime;
 		this.sifra = sifra;
+		
 	}
 
 	public String getIme() {
@@ -51,12 +57,12 @@ public abstract class Korisnik {
 		this.prezime = prezime;
 	}
 
-	public String getJMBG() {
-		return JMBG;
+	public String getJmbg() {
+		return jmbg;
 	}
 
-	public void setJMBG(String jMBG) {
-		JMBG = jMBG;
+	public void setJmbg(String jmbg) {
+		this.jmbg = jmbg;
 	}
 
 	public String getPol() {
@@ -99,10 +105,15 @@ public abstract class Korisnik {
 		this.sifra = sifra;
 	}
 
-	@Override
-	public String toString() {
-		return "Korisnik [ime=" + ime + ", prezime=" + prezime + ", JMBG=" + JMBG + ", pol=" + pol + ", adresa="
-				+ adresa + ", broj_telefona=" + broj_telefona + ", korisnicko_ime=" + korisnicko_ime + ", sifra="
-				+ sifra + "]";
+	public int getId() {
+		return id;
 	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	
+
+
 }

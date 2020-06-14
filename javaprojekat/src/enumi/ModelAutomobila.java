@@ -1,6 +1,7 @@
 package enumi;
 
-public enum Modeli_auta {
+public enum ModelAutomobila {
+
 	X1,
 	X2,
 	X3,
@@ -13,5 +14,4 @@ public enum Modeli_auta {
 	C3,
 	C4_CACTUS
 	
-	}
-
+}
