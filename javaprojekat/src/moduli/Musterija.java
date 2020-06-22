@@ -2,6 +2,8 @@ package moduli;
 
 import java.util.ArrayList;
 
+import enumi.Pol;
+
 public class Musterija extends Korisnik {
 
 	private int broj_nagradnoh_bodova;
@@ -13,7 +15,7 @@ public class Musterija extends Korisnik {
 
 	}
 
-	public Musterija(int id, String ime, String prezime, String jmbg, String pol, String adresa, String broj_telefona,
+	public Musterija(int id, String ime, String prezime, String jmbg, Pol pol, String adresa, String broj_telefona,
 			String korisnicko_ime, String sifra, int broj_nagradnoh_bodova, ArrayList<Automobil> automobili) {
 		super(id, ime, prezime, jmbg, pol, adresa, broj_telefona, korisnicko_ime, sifra);
 		this.broj_nagradnoh_bodova = broj_nagradnoh_bodova;

@@ -2,6 +2,7 @@ package moduli;
 
 import java.util.ArrayList;
 
+import enumi.StatusServisa;
 import moduli.Automobil;
 import moduli.Deo;
 import moduli.Serviser;
@@ -15,7 +16,7 @@ public class Servis {
 	private String termin;
 	private String opis;
 	private ArrayList<Deo> upotrebljeni_delovi;
-	private String status_servisa;
+	private StatusServisa status_servisa;
 	
 	public Servis() {
 		this.id = 0;
@@ -24,11 +25,11 @@ public class Servis {
 		this.termin = "";
 		this.opis = "";
 		this.upotrebljeni_delovi = null;
-		this.status_servisa = "";
+		this.status_servisa = StatusServisa.ZAKAZAN;
 	}
 
 	public Servis(int id, Automobil auto_za_servis, Serviser serviser, String termin, String opis, ArrayList<Deo> upotrebljeni_delovi,
-			String status_servisa) {
+			StatusServisa status_servisa) {
 		super();
 		this.id = id;
 		this.auto_za_servis = auto_za_servis;
@@ -87,20 +88,26 @@ public class Servis {
 		this.upotrebljeni_delovi = upotrebljeni_delovi;
 	}
 
-	public String getStatus_servisa() {
+
+
+	public StatusServisa getStatus_servisa() {
 		return status_servisa;
 	}
 
-	public void setStatus_servisa(String status_servisa) {
+	public void setStatus_servisa(StatusServisa status_servisa) {
 		this.status_servisa = status_servisa;
 	}
 
 	@Override
 	public String toString() {
-		return "Servis [auto_za_servis=" + auto_za_servis + ", serviser=" + serviser + ", termin=" + termin + ", opis="
-				+ opis + ", upotrebljeni_delovi=" + upotrebljeni_delovi + ", status_servisa=" + status_servisa + "]";
-		}
-		
+		return "Servis [id=" + id + ", auto_za_servis=" + auto_za_servis + ", serviser=" + String.valueOf(serviser.getId()) + ", termin="
+				+ termin + ", opis=" + opis + ", upotrebljeni_delovi=" + upotrebljeni_delovi + ", status_servisa="
+				+ status_servisa + "]";
+	}
+
+
+
+	
 
 	
 }

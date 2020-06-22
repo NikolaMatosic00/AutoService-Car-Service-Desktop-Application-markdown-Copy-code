@@ -1,13 +1,13 @@
 package moduli;
 
-	
+import enumi.Pol;
 
 public abstract class Korisnik {
 	protected int id;
 	protected String ime;
 	protected String prezime;
 	protected String jmbg;
-	protected String pol;
+	protected Pol pol;
 	protected String adresa;
 	protected String broj_telefona;
 	protected String korisnicko_ime;
@@ -18,7 +18,7 @@ public abstract class Korisnik {
 		this.ime = "";
 		this.prezime = "";
 		this.jmbg = "";
-		this.pol = "";
+		this.pol = Pol.MUSKI;
 		this.adresa = "";
 		this.broj_telefona = "";
 		this.korisnicko_ime = "";
@@ -26,7 +26,7 @@ public abstract class Korisnik {
 		
 	}
 
-	public Korisnik(int id, String ime, String prezime, String jmbg, String pol, String adresa, String broj_telefona,
+	public Korisnik(int id, String ime, String prezime, String jmbg, Pol pol, String adresa, String broj_telefona,
 			String korisnicko_ime, String sifra) {
 		super();
 		this.id = id;
@@ -65,11 +65,12 @@ public abstract class Korisnik {
 		this.jmbg = jmbg;
 	}
 
-	public String getPol() {
+	
+	public Pol getPol() {
 		return pol;
 	}
 
-	public void setPol(String pol) {
+	public void setPol(Pol pol) {
 		this.pol = pol;
 	}
 

@@ -1,2 +1,4 @@
-1|Miljan|Mijovic|243243390842|muski|DIR72|0647352920|Skdler|kanalizacija123|120|1
-2|Uros|Mijovic|234980110231|muski|DIR72|064735291|1dler|ukidid|20|2
+1|Miljan|Mijovic|243243390842|MUSKI|DIR72|0647352920|Skdler|kanalizacija123|120| 1
+2|Uros|Mijovic|234980110231|MUSKI|DIR72|064735291|1dler|ukidid|20| 2
+3|Natasa|Matosic|0710972815060|ZENSKI|Jozefa Marcoka|0615689789|Zugi|Nata0710|50| 3
+4|Nastasija|Maksimovic|03219302193021|ZENSKI|NF21a|0633949823|DeboS|Stasion123|121| 4

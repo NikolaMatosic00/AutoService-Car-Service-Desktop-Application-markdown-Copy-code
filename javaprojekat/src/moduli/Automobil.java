@@ -3,6 +3,7 @@ package moduli;
 import moduli.ServisnaKnjizica;
 import enumi.Marka;
 import enumi.ModelAutomobila;
+import enumi.VrstaGoriva;
 import moduli.Musterija;
 
 
@@ -15,7 +16,7 @@ public class Automobil {
 	private String godina_proizvodnje;
 	private int zapremina_motora;
 	private int snaga_motora;
-	private String vrsta_goriva;
+	private VrstaGoriva vrsta_goriva;
 	private  ServisnaKnjizica servisna_knjizica;
 	
 	public Automobil () {
@@ -26,13 +27,13 @@ public class Automobil {
 		this.godina_proizvodnje = "";
 		this.zapremina_motora = 0;
 		this.snaga_motora = 0;
-		this.vrsta_goriva = "";
+		this.vrsta_goriva = VrstaGoriva.BENZIN;
 		this.servisna_knjizica = null;
 		
 	}
 
 	public Automobil(int id, Musterija vlasnik, Marka marka, ModelAutomobila model, String godina_proizvodnje,
-			int zapremina_motora, int snaga_motora, String vrsta_goriva, ServisnaKnjizica servisna_knjizica) {
+			int zapremina_motora, int snaga_motora, VrstaGoriva vrsta_goriva, ServisnaKnjizica servisna_knjizica) {
 		super();
 		this.id = id;
 		this.vlasnik = vlasnik;
@@ -106,11 +107,12 @@ public class Automobil {
 		this.snaga_motora = snaga_motora;
 	}
 
-	public String getVrsta_goriva() {
+	
+	public VrstaGoriva getVrsta_goriva() {
 		return vrsta_goriva;
 	}
 
-	public void setVrsta_goriva(String vrsta_goriva) {
+	public void setVrsta_goriva(VrstaGoriva vrsta_goriva) {
 		this.vrsta_goriva = vrsta_goriva;
 	}
 

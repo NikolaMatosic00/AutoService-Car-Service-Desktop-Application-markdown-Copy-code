@@ -1,3 +1,2 @@
-1|Nikola|Nikola|Matosic|2432423324|muski|NF73a|0646477555|aster255|Nikolica.12|70000
-2|Marko|Marko|Matosic|90910232310|muski|BO14|0646477550|markomat123|Nikoletina|90000
-7|NijeNikola|NijeNikola|NijeMatosic|2432423324|muski|NF73a|0646477555|aster255|Nikolica.12|2432423
+1|Nikola|Matosic|2432423324|MUSKI|NF73a|0646477555|aster255|Nikolica.12|70000
+2|Marko|Matosic|90910232310|MUSKI|BO14|0646477550|markomat123|Nikoletina|90000

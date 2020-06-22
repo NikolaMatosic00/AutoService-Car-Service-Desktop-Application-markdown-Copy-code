@@ -1,5 +1,6 @@
 package moduli;
 
+import enumi.Pol;
 import moduli.Korisnik;
 
 
@@ -12,7 +13,7 @@ public class Administrator extends Korisnik {
 		
 	}
 
-	public Administrator(int id, String ime, String prezime, String jmbg, String pol, String adresa, String broj_telefona,
+	public Administrator(int id, String ime, String prezime, String jmbg, Pol pol, String adresa, String broj_telefona,
 			String korisnicko_ime, String sifra, String plata) {
 		super(id, ime, prezime, jmbg, pol, adresa, broj_telefona, korisnicko_ime, sifra);
 		this.plata = plata;
@@ -33,6 +34,7 @@ public class Administrator extends Korisnik {
 				+ ", korisnicko_ime=" + korisnicko_ime + ", sifra=" + sifra + "]";
 	}
 
+	
 	
 	
 	
