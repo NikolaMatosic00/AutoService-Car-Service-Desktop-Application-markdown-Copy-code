@@ -22,8 +22,8 @@ public class Automobil {
 	public Automobil () {
 		this.id = 0;
 		this.vlasnik = null;
-		this.marka = null;
-		this.model = null;
+		this.marka = Marka.BMW;
+		this.model = ModelAutomobila.X3;
 		this.godina_proizvodnje = "";
 		this.zapremina_motora = 0;
 		this.snaga_motora = 0;
@@ -46,11 +46,9 @@ public class Automobil {
 		this.servisna_knjizica = servisna_knjizica;
 	}
 
-	@Override
-	public String toString() {
-		return "Automobil [id=" + String.valueOf(this.id)+ "," + "vlasnik=" + this.vlasnik.korisnicko_ime+", marka=" + this.marka + ", model=" + this.model + ", godina_proizvodnje=" + 
-	this.godina_proizvodnje + ", zapremina_motora=" + String.valueOf(this.zapremina_motora) + ", snaga_motora=" + String.valueOf(this.snaga_motora) + ", vrsta_goriva=" + this.vrsta_goriva + ", servisna_knjizica=" + String.valueOf(this.servisna_knjizica.getId()) + "]";
-	}
+	
+
+
 	public int getId() {
 		return id;
 	}
@@ -122,6 +120,14 @@ public class Automobil {
 
 	public void setServisna_knjizica(ServisnaKnjizica servisna_knjizica) {
 		this.servisna_knjizica = servisna_knjizica;
+	}
+
+	@Override
+	public String toString() {
+		return "Automobil [id=" + id + ", vlasnik=" + vlasnik.getKorisnicko_ime() + ", marka=" + marka + ", model=" + model
+				+ ", godina_proizvodnje=" + godina_proizvodnje + ", zapremina_motora=" + zapremina_motora
+				+ ", snaga_motora=" + snaga_motora + ", vrsta_goriva=" + vrsta_goriva + ", servisna_knjizica="
+				+ servisna_knjizica.getId() + "]";
 	}
 
 	

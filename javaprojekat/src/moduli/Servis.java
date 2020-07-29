@@ -18,6 +18,7 @@ public class Servis {
 	private ArrayList<Deo> upotrebljeni_delovi;
 	private StatusServisa status_servisa;
 	
+	
 	public Servis() {
 		this.id = 0;
 		this.auto_za_servis = null;
@@ -40,6 +41,8 @@ public class Servis {
 		this.status_servisa = status_servisa;
 	}
 	
+	
+
 	public int getId() {
 		return id;
 	}
@@ -100,10 +103,12 @@ public class Servis {
 
 	@Override
 	public String toString() {
-		return "Servis [id=" + id + ", auto_za_servis=" + auto_za_servis + ", serviser=" + String.valueOf(serviser.getId()) + ", termin="
+		return "Servis [id=" + id + ", auto_za_servis=" + auto_za_servis.getId() + ", serviser=" + serviser.getId() + ", termin="
 				+ termin + ", opis=" + opis + ", upotrebljeni_delovi=" + upotrebljeni_delovi + ", status_servisa="
 				+ status_servisa + "]";
 	}
+
+	
 
 
 

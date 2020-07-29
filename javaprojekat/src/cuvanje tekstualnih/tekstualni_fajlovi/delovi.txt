@@ -1,6 +1,7 @@
 1|CITROEN|C1|Prednji desni branik|15000|1
 2|MERCEDES_BENZ|CLA|Prednji levi far|5000|2
 3|CITROEN|C3|Zadnje levo staklo|23000|3
+4|CITROEN|C1|Prednji levi branik|15000|1
 6|CITROEN|C4_CACTUS|Prednja leva guma|7000|5
-7|CITROEN|C1|Prednji levi branik|15000|1
-8|MERCEDES_BENZ|CLA|Prednji desni far|5000|2
+7|CITROEN|C4_CACTUS|Prednja desna guma|7000|5
+8|MERCEDES_BENZ|CLA|Zadnja desna vrata|17000|6

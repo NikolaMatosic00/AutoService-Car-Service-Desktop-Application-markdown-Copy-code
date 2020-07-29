@@ -49,6 +49,8 @@ public class Musterija extends Korisnik {
 				+ ", ime=" + ime + ", prezime=" + prezime + ", jmbg=" + jmbg + ", pol=" + pol + ", adresa=" + adresa
 				+ ", broj_telefona=" + broj_telefona + ", korisnicko_ime=" + korisnicko_ime + ", sifra=" + sifra + "]";
 	}
+
+	
 	
 	
 	
