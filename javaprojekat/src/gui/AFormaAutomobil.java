@@ -121,7 +121,7 @@ private void InitActions() {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			if(validacija()) {
-				int idd = sv.getAutomobili().get(sv.getAutomobili().size() - 1).getId();
+				int idd = sv.getAutomobili().get(sv.getAutomobili().size() - 1).getId() + 1;
 				Musterija vlasnikk = sv.NadjiMusteriju(Integer.parseInt(vlasnik.getSelectedItem().toString().split(":")[0]));
 				Marka markaa = Marka.valueOf(marka.getSelectedItem().toString());
 				ModelAutomobila modell = ModelAutomobila.valueOf(model.getSelectedItem().toString());
