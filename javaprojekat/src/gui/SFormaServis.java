@@ -58,7 +58,7 @@ public SFormaServis(SveListe sv, Servis ser, Serviser serviser) {
 }
 
 private void InitGUI() {
-	MigLayout layout = new MigLayout("wrap 2", "[][]","[][][][][][]25[]");
+	MigLayout layout = new MigLayout("wrap 2", "[][]","[][][][][][]");
 	setLayout(layout);
 	
 	for(Automobil a : sv.getAutomobili()) {

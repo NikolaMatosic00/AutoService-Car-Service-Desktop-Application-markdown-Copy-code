@@ -119,7 +119,7 @@ public class ATabelaAdministratora extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				AFormaAdmin fda = new AFormaAdmin(sv, null);
+				AFormaAdmin fda = new AFormaAdmin(sv, null, ATabelaAdministratora.this);
 				fda.setVisible(true);
 
 				
@@ -138,7 +138,7 @@ public class ATabelaAdministratora extends JFrame {
 				}else {
 					String korisnicko_ime = table_model.getValueAt(red, 2).toString();
 					Administrator adminis = sv.nadjiAdministratora(korisnicko_ime);
-					AFormaAdmin fda = new AFormaAdmin(sv, adminis);
+					AFormaAdmin fda = new AFormaAdmin(sv, adminis, null);
 					fda.setVisible(true);
 				}
 				

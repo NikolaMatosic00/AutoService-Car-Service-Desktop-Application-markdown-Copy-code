@@ -40,9 +40,10 @@ public class AFormaAdmin extends JFrame {
 
 	private SveListe sv;
 	private Administrator admin;
+	private ATabelaAdministratora atabb;
 	
-	
-	public AFormaAdmin(SveListe sv, Administrator ad) {
+	public AFormaAdmin(SveListe sv, Administrator ad, ATabelaAdministratora atab) {
+		this.atabb = atab;
 		this.sv = sv;
 		this.admin = ad;
 		if(admin == null) {
@@ -146,8 +147,14 @@ public class AFormaAdmin extends JFrame {
 					sv.upisiAdministratore();
 					AFormaAdmin.this.dispose();
 					AFormaAdmin.this.setVisible(false);
-					
+					if(atabb != null) {
+					atabb.dispose();
+					atabb.setVisible(false);
+					ATabelaAdministratora ata = new ATabelaAdministratora(sv);
+					ata.setVisible(true);
+					}
 				}
+				
 				
 			}
 		});

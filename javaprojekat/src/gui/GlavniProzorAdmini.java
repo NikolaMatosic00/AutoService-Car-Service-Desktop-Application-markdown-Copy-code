@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DateFormat;
@@ -55,6 +56,8 @@ public class GlavniProzorAdmini extends JFrame {
 		setTitle("Prijavljeni ste kao: " + admin.getIme() + " " + admin.getPrezime());
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
+		Dimension d = new Dimension(650, 400);
+		setMinimumSize(d);
 		initGUI();
 		initActions();
 		
@@ -102,6 +105,7 @@ public class GlavniProzorAdmini extends JFrame {
 		btn_vreme.setBackground(Color.lightGray);
 		btn_vreme.setFocusable(false);
 
+		
 		logout.setBackground(Color.lightGray);
 		
 		add(btn_admini, "grow, push");

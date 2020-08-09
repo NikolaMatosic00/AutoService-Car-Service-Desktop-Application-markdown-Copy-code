@@ -1,14 +1,18 @@
 package gui;
 
+import java.awt.Color;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.plaf.ColorUIResource;
 
 import moduli.Administrator;
 import moduli.Musterija;
@@ -18,14 +22,17 @@ import rad_sa_listama.SveListe;
 
 public class LoginProzor extends JFrame {
 
-	private JLabel username = new JLabel("Korisnicko ime:");
-	private JLabel password = new JLabel("Sifra:");
+	private JButton username = new JButton();
+	private JButton password = new JButton();
 	private JTextField username_tf = new JTextField(20);
 	private JTextField password_tf = new JTextField(20);
-	private JButton btn_ok = new JButton("OK");
-	private JButton btn_cancel = new JButton("Cancel");
+	private JButton btn_ok = new JButton();
 	private SveListe sv;
 	
+	private String slika_korisicko_putanja = new String(SlikePutanje.slika_korisnicko);
+	private String slika_sifra_putanja = new String(SlikePutanje.slika_sifra);
+	private String slika_korekt_putanja = new String(SlikePutanje.slika_korekt);
+
 	
 	
 	public LoginProzor(SveListe sv) {
@@ -41,32 +48,32 @@ public class LoginProzor extends JFrame {
 	}
 	
 	private void initGUI(){
+		ImageIcon ki = new ImageIcon(slika_korisicko_putanja);
+		username.setIcon(ki);
+		ImageIcon sif = new ImageIcon(slika_sifra_putanja);
+		password.setIcon(sif);
+		ImageIcon korekt = new ImageIcon(slika_korekt_putanja);
+		btn_ok.setIcon(korekt);
+		
+		btn_ok.setBorderPainted(false);
+		username.setBorderPainted(false);
+		password.setBorderPainted(false);
+		btn_ok.setBackground(Color.white);
+		btn_ok.setFocusPainted(false);
+		username.setEnabled(false);
+		password.setEnabled(false);
 		MigLayout ml = new MigLayout();
 		setLayout(ml);
-		
 		add(username);
 		add(username_tf, "wrap");
 		add(password);
 		add(password_tf, "wrap");
-		add(btn_ok, "skip, split");
-		add(btn_cancel);
+		add(btn_ok, "skip");
 
 	}
 	
 	private void initActions() {
-		
-		btn_cancel.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-
-				LoginProzor.this.dispose();
-				LoginProzor.this.setVisible(false);
 				
-			}
-		});
-	
-		
 		btn_ok.addActionListener(new ActionListener() {
 			
 			@Override

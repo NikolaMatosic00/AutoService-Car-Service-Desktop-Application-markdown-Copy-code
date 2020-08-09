@@ -1,5 +1,6 @@
 package gui;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -31,6 +32,7 @@ public class GlavniProzorServiseri extends JFrame {
 		setTitle("Prijavljeni ste kao: " + serviser.getIme() + " " + serviser.getPrezime());
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
+		setMinimumSize(new Dimension(380, 150));
 		GUIMenu();
 		initActions();
 		

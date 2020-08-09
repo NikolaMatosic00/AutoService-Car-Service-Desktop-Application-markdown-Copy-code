@@ -73,7 +73,8 @@ private void InitGUI() {
 		popuniPolja();
 	}
 	
-	
+	add(label_vlasnik);
+	add(vlasnik);
 	add(label_marka);
 	add(marka);
 	add(label_model);
