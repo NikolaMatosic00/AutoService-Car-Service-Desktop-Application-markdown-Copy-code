@@ -31,7 +31,7 @@ public class LoginProzor extends JFrame {
 	
 	private String slika_korisicko_putanja = new String(SlikePutanje.slika_korisnicko);
 	private String slika_sifra_putanja = new String(SlikePutanje.slika_sifra);
-	private String slika_korekt_putanja = new String(SlikePutanje.slika_korekt);
+//	private String slika_korekt_putanja = new String(SlikePutanje.slika_korekt);
 
 	
 	
@@ -52,16 +52,17 @@ public class LoginProzor extends JFrame {
 		username.setIcon(ki);
 		ImageIcon sif = new ImageIcon(slika_sifra_putanja);
 		password.setIcon(sif);
-		ImageIcon korekt = new ImageIcon(slika_korekt_putanja);
-		btn_ok.setIcon(korekt);
+//		ImageIcon korekt = new ImageIcon(slika_korekt_putanja);
+	//	btn_ok.setIcon(korekt);
 		
 		btn_ok.setBorderPainted(false);
 		username.setBorderPainted(false);
 		password.setBorderPainted(false);
-		btn_ok.setBackground(Color.white);
-		btn_ok.setFocusPainted(false);
 		username.setEnabled(false);
 		password.setEnabled(false);
+		btn_ok.setOpaque(false);
+		btn_ok.setContentAreaFilled(false);
+		btn_ok.setBorderPainted(false);
 		MigLayout ml = new MigLayout();
 		setLayout(ml);
 		add(username);

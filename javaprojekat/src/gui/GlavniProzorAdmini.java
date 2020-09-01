@@ -15,6 +15,7 @@ import javax.swing.JFrame;
 
 
 import moduli.Administrator;
+import moduli.Servis;
 import net.miginfocom.swing.MigLayout;
 import rad_sa_listama.SveListe;
 
@@ -93,7 +94,6 @@ public class GlavniProzorAdmini extends JFrame {
 		btn_delovi.setBorderPainted(false);
 		btn_vreme.setBorderPainted(false);
 		logout.setBorderPainted(false);
-		
 		logout.setFocusPainted(false);
 		btn_admini.setFocusPainted(false);
 		btn_automobili.setFocusPainted(false);

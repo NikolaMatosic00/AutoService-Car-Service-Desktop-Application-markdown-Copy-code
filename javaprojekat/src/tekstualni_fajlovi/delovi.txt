@@ -6,3 +6,6 @@
 8|MERCEDES_BENZ|CLA|Prednji desni far|5000|2
 9|CITROEN|C1|zadnja leva vrata|15000|11
 10|CITROEN|C1|zadnja desna vrata|15000|11
+11|CITROEN|C3|levi branik|5000|14
+12|CITROEN|C3|desni branik|5000|14
+13|BMW|X3|proba|5555|23
