@@ -444,7 +444,7 @@ public class SveListe {
 	public void upisiAdministratore() {
 		
 		
-		File fajl_out = new File("C:\\Users\\Dell\\Desktop\\3Projekat\\src\\tekstualni_fajlovi\\administratori.txt");
+		File fajl_out = new File("C:\\Users\\Dell\\git\\UOP\\javaprojekat\\src\\tekstualni_fajlovi\\administratori.txt");
 		
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(fajl_out));
@@ -467,7 +467,7 @@ public class SveListe {
 	public void upisiMusterije() {
 		
 		
-		File fajl_out = new File("C:\\Users\\Dell\\Desktop\\3Projekat\\src\\tekstualni_fajlovi\\musterije.txt");
+		File fajl_out = new File("C:\\Users\\Dell\\git\\UOP\\javaprojekat\\src\\tekstualni_fajlovi\\musterije.txt");
 		
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(fajl_out));
@@ -491,7 +491,7 @@ public class SveListe {
 	public void upisiServisere() {
 		
 		
-		File fajl_out = new File("C:\\Users\\Dell\\Desktop\\3Projekat\\src\\tekstualni_fajlovi\\serviseri.txt");
+		File fajl_out = new File("C:\\Users\\Dell\\git\\UOP\\javaprojekat\\src\\tekstualni_fajlovi\\serviseri.txt");
 		
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(fajl_out));
@@ -515,7 +515,7 @@ public class SveListe {
 	public void upisiAutomobile( ) {
 	
 		
-		File fajl_out = new File("C:\\Users\\Dell\\Desktop\\3Projekat\\src\\tekstualni_fajlovi\\automobili.txt");
+		File fajl_out = new File("C:\\Users\\Dell\\git\\UOP\\javaprojekat\\src\\tekstualni_fajlovi\\automobili.txt");
 		
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(fajl_out));
@@ -540,7 +540,7 @@ public class SveListe {
 	public void upisiDelove() {
 			
 			
-			File fajl_out = new File("C:\\Users\\Dell\\Desktop\\3Projekat\\src\\tekstualni_fajlovi\\delovi.txt");
+			File fajl_out = new File("C:\\Users\\Dell\\git\\UOP\\javaprojekat\\src\\tekstualni_fajlovi\\delovi.txt");
 			
 			try {
 				BufferedWriter bw = new BufferedWriter(new FileWriter(fajl_out));
@@ -561,7 +561,7 @@ public class SveListe {
 	public void upisiServise() {
 		
 		
-		File fajl_out = new File("C:\\Users\\Dell\\Desktop\\3Projekat\\src\\tekstualni_fajlovi\\servisi.txt");
+		File fajl_out = new File("C:\\Users\\Dell\\git\\UOP\\javaprojekat\\src\\tekstualni_fajlovi\\servisi.txt");
 		
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(fajl_out));
@@ -587,7 +587,7 @@ public class SveListe {
 	public void upisiServisneKnjizice() {
 		
 		
-		File fajl_out = new File("C:\\Users\\Dell\\Desktop\\3Projekat\\src\\tekstualni_fajlovi\\servisneknjizice.txt");
+		File fajl_out = new File("C:\\Users\\Dell\\git\\UOP\\javaprojekat\\src\\tekstualni_fajlovi\\servisneknjizice.txt");
 		
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(fajl_out));

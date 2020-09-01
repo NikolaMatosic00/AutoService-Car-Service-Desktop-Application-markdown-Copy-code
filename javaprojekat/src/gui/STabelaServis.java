@@ -57,15 +57,16 @@ public class STabelaServis extends JFrame {
 		main_tool_bar.add(btnEdit);
 
 		add(main_tool_bar, BorderLayout.SOUTH);
-		String[] zaglavlje = new String[] {"Auto za servis", "Termin" ,"Opis", "Status servisa"};
+		String[] zaglavlje = new String[] {"ID", "Auto za servis", "Termin" ,"Opis", "Status servisa"};
 		Object[][] sadrzaj = new Object[serviser.getServisi_na_koje_je_rasporedjen().size()][zaglavlje.length];
 		
 		for(int i = 0; i < serviser.getServisi_na_koje_je_rasporedjen().size(); i ++) {
 			Servis ser = serviser.getServisi_na_koje_je_rasporedjen().get(i);
-			sadrzaj[i][0] = ser.getAuto_za_servis().getMarka() + "-" + ser.getAuto_za_servis().getModel();
-			sadrzaj[i][1] = ser.getTermin();
-			sadrzaj[i][2] = ser.getOpis();
-			sadrzaj[i][3] = ser.getStatus_servisa();
+			sadrzaj[i][0] = ser.getId();
+			sadrzaj[i][1] = ser.getAuto_za_servis().getMarka() + "-" + ser.getAuto_za_servis().getModel();
+			sadrzaj[i][2] = ser.getTermin();
+			sadrzaj[i][3] = ser.getOpis();
+			sadrzaj[i][4] = ser.getStatus_servisa();
 			
 
 		

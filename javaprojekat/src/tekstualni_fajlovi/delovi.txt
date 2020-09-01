@@ -4,3 +4,5 @@
 6|CITROEN|C4_CACTUS|Prednja leva guma|7000|5
 7|CITROEN|C1|Prednji levi branik|15000|1
 8|MERCEDES_BENZ|CLA|Prednji desni far|5000|2
+9|CITROEN|C1|zadnja leva vrata|15000|11
+10|CITROEN|C1|zadnja desna vrata|15000|11

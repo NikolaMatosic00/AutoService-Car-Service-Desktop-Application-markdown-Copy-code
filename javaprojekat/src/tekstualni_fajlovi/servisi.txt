@@ -5,3 +5,4 @@
 5|5|2|25/6/2019|Zamena guma|ZAKAZAN
 6|2|3|26/6/2019|Ispravka ulubljenih vrata|ZAKAZAN
 10|6|1|02/08/2020(10:40)|Popravka kvara multimedije|ZAKAZAN
+11|1|3|07/08/2020(10:35)|ispravka vrata :D|ZAKAZAN

@@ -133,14 +133,17 @@ private void InitActions() {
 							}
 						}
 						sv.getServisi().add(servviss);
+						sv.upisiSve();
 						for(Serviser s : sv.getServiseri()) {
 							if(s.getKorisnicko_ime().equals(servonja.getKorisnicko_ime())) {
 								s.getServisi_na_koje_je_rasporedjen().add(servviss);
+								sv.upisiSve();
 							}
 						}
 						for(Automobil a : sv.getAutomobili()) {
 							if(a.getId() == idid) {
 								a.getServisna_knjizica().getObavljeni_servisi().add(servviss);
+								sv.upisiSve();
 							}
 						}
 					}else {
@@ -153,6 +156,7 @@ private void InitActions() {
 					servis.setTermin(terminn);
 					servis.setOpis(opiss);
 					servis.setStatus_servisa(statuss);
+					sv.upisiSve();
 					
 				}
 				sv.upisiSve();

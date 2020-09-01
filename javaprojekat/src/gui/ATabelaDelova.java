@@ -106,36 +106,46 @@ public class ATabelaDelova extends JFrame {
 					Deo d = sv.NadjiDeo(id);
 					String za_upis = "";
 					String[] cao = d.getNaziv().split(" ");
+					int brojacc = 0;
 					for(String rec : cao) {
 						if(rec.equalsIgnoreCase("levi")) {
 							rec = "desni";
-						
+							brojacc ++;
 						
 						}else if(rec.equalsIgnoreCase("levo")) {
 							rec = "desno";
-						
+							brojacc ++;
+
 						
 						}else if(rec.equalsIgnoreCase("leva")) {
 							rec = "desna";
-						
+							brojacc ++;
+
 						}else if(rec.equalsIgnoreCase("desni")) {
 							rec = "levi";
-						
+							brojacc ++;
+
 						
 						}else if(rec.equalsIgnoreCase("desno")) {
 							rec = "levo";
-						
+							brojacc ++;
+
 						
 						}else if(rec.equalsIgnoreCase("desna")) {
 							rec = "leva";
+							brojacc ++;
+
 						}
 						
 						za_upis += rec + " ";
 					}
-					
+					if(brojacc == 0) {
+						JOptionPane.showMessageDialog(null, "Za izabrani deo ne postoji simentricni", "!", JOptionPane.WARNING_MESSAGE);
+					}else {
 					sv.getDelovi().add(new Deo(sv.getDelovi().get(sv.getDelovi().size() - 1).getId() + 1, d.getMarka(), d.getModel(), za_upis.substring(0, za_upis.length() - 1), d.getCena(), d.getNamenjen_za_servis()));
 					sv.upisiDelove();
-				
+					JOptionPane.showMessageDialog(null, "Dodat simetricni deo", "Uspesno!", JOptionPane.INFORMATION_MESSAGE);
+					}
 				}
 			}
 		});
