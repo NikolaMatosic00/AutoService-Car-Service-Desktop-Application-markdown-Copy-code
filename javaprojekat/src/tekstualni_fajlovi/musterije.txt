@@ -1,6 +1,6 @@
 1|Miljan|Mijovic|243243390842|MUSKI|DIR72|0647352920|Skdler|kanalizacija123|0
 2|Uros|Mijovic|22378927972183|MUSKI|DIR72|0653829382|1dler|ukidid|0
-3|Natasa|Matosic|0710972815060|ZENSKI|Jozefa Marcoka|063315326|Zugi|Nata0710|0
+7|Natasa|Matosic|0710972815060|ZENSKI|Jozefa Marcoka|063315326|Zugi|Nata0710|10
 4|Baba|Mira|0422384023803208|ZENSKI|Petefi Sandora 24|0633942028|BMira|MirjanaM|0
 5|Deda|D|9328493204902|MUSKI|Marka Miljanova 24|0625632574|DDobo|MijovS|0
-6|Nikola|Smiljanic|2108000800048|MUSKI|Narodnof fronta 62|064289393|kiki|NSmiljanic|0
+6|Nikola|Smiljanic|2108000800048|MUSKI|Narodnof fronta 62|064289393|kiki|NSmiljanic|1

@@ -16,6 +16,7 @@ import javax.swing.JToolBar;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 
+import enumi.StatusServisa;
 import moduli.Administrator;
 import moduli.Automobil;
 import moduli.Musterija;
@@ -122,11 +123,14 @@ public class MTabelaServisa extends JFrame {
 				if (red == -1) {
 					JOptionPane.showMessageDialog(null, "Odaberite red za izmenu.", "Greska!", JOptionPane.WARNING_MESSAGE);
 					
-				}else {
+				}else if (table_model.getValueAt(red, 5).toString() == StatusServisa.ZAKAZAN.toString()) {
 					String idd = table_model.getValueAt(red, 0).toString();
 					Servis s = sv.NadjiServis(Integer.parseInt(idd));
 					MFormaServis fda = new MFormaServis(sv, s, musterija);
 					fda.setVisible(true);
+				}else {
+					JOptionPane.showMessageDialog(null, "Moguce je promeniti samo zakazane servise.", "Greska!", JOptionPane.WARNING_MESSAGE);
+
 				}
 				
 			}

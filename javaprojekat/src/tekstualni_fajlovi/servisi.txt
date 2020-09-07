@@ -1,10 +1,10 @@
 1|1|1|21/6/2019(10:45)|Popravka branika.|ZAKAZAN
 2|2|2|22/6/2019(10:40)|Zamena fara.|ZAKAZAN
-3|3|2|23/6/2019(10:40)|Zamena stakla.|ZAKAZAN
+3|3|2|23/6/2019(10:40)|Zamena stakla.|ZAVRSEN
 4|4|1|24/6/2019(10:40)|Zamena auspuha|ZAKAZAN
 5|5|2|25/6/2019|Zamena guma|ZAKAZAN
-6|2|3|26/6/2019|Ispravka ulubljenih vrata|ZAVRSEN
+6|2|3|26/6/2019|Ispravka ulubljenih vrata|ZAKAZAN
 10|6|1|02/08/2020(10:40)|Popravka kvara multimedije|ZAKAZAN
 11|1|3|07/08/2020(10:35)|ispravka vrata :D|ZAKAZAN
-14|3|3|10/09/2020(10:40)|zamena branika :)|ZAVRSEN
-23|6|3|proba|proba|ZAVRSEN
+25|3|3|10/09/2020(10:40)|zamena branika :)|ZAKAZAN
+24|6|3|proba|proba|ZAKAZAN
